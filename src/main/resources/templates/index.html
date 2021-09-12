@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>SCHEDULE APP</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   </head>
+   <body>
+      <div class ="header" id="topheader">
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container  p-2">
+            <a class="navbar-brand" style="color:white; font-weight:bold" href="#">SCHEDULE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" th:href="@{/schedule}">Daily Schedule</a>
+                  </li>
+                  <li class="nav-item">
+                     <a  class="nav-link" th:href="@{/trendingIssue}">Trending Issues</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#footerdiv">Bullpen</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contactid">CSAT Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Service Desk Community</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="header-section">
+         <div class="center-div">
+            <h1 class="font-weight-bold"> Welcome To Work </h1>
+            <p>We create best possible work enviroment </p>
+            <div class="header-buttons">
+               <a href="#">AboutUs</a>
+               <a href="#"> Contact</a>
+            </div>
+      </section>
+      </div>
+      <!--  ************************* header parts end ************************  -->
+      <!--************************* three extra header div starts ************* -->
+      <section class ="header-extradiv">
+         <div class="container">
+            <div class="row">
+               <div class="extra-div col-1g-4 col-md-4 col-12">
+                  <a href="#"><i class="fa-2x fa fa-desktop" aria-hidden="true"></i></a>
+                  <h2>EASY TO USE</h2>
+                  <p> Its super easy to use our product and do offer.</p>
+               </div>
+               <div class="extra-div col-1g-4 col-md-4 col-12">
+                  <a href="#"><i class="fa-2x fa fa-trophy" aria-hidden="true"></i></a>
+                  <h2>AWESOME DESIGN</h2>
+                  <p> We Provide variety of website design and let our customer pick the right website for their business.</p>
+               </div>
+               <div class="extra-div col-1g-4 col-md-4 col-12">
+                  <a href="#"><i class="fa-2x fa fa-magic" aria-hidden="true"></i></a>
+                  <h2>EASY TO CUSTOMIZE</h2>
+                  <p> We train business owners on modiftying and customizing thier website content.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--************************* three extra header div starts ************* -->
+      <!--************************* offer section start ************* -->
+      <section class ="serviceoffers" id="servicediv">
+      <div class="container headings text-center">
+         <h1 class="text-center font-weight-bold">WHAT DO WE OFFER </h1>
+         <p class="text-center"> Business websites, website maintannce, 24/7 customer support and graphic design services </p>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0">
+               <div class="names my-3">
+                  <h1>html</h1>
+                  <div class="progress w-75">
+                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+                  </div>
+               </div>
+               <div class="names my-3">
+                  <h1>CSS</h1>
+                  <div class="progress w-75">
+                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:100%">90%</div>
+                  </div>
+               </div>
+               <div class="names my-3">
+                  <h1>JAVASCRIPT</h1>
+                  <div class="progress w-75">
+                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:85%">80%</div>
+                  </div>
+               </div>
+               <div class="names my-3">
+                  <h1>REACT JS</h1>
+                  <div class="progress w-75">
+                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:75%">75%</div>
+                  </div>
+               </div>
+               <div class="names my-3">
+                  <h1>NODE JS</h1>
+                  <div class="progress w-75">
+                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:80%">80%</div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 servicediv">
+               <div class="row">
+                  <div class="col-lg-2 col-2 service-icons">
+                     <i class="fa-3x fa fa-desktop" aria-hidden="true">
+                     </i>
+                  </div>
+                  <div class="col lg-10 col-10">
+                     <h2>Website Development</h2>
+                     <p>We provide responsive website as per the custoemr needs 
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-2 col-2 service-icons">
+                     <i class="fa-3x fa fa-wifi" aria-hidden="true">
+                     </i>
+                  </div>
+                  <div class="col lg-10 col-10">
+                     <h2>Graphics Design</h2>
+                     <p> Books, magazines, catalogs, newspapers
+                     Visual identity such as letterhead, business cards, 
+                     brand guides, logos Marketing materials: flyers, 
+                     brochures, postcards, one-sheets, posters
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-2 col-2 service-icons">
+                     <i class="fa-3x fa fa-phone" aria-hidden="true">
+                     </i>
+                  </div>
+                  <div class="col lg-10 col-10">
+                     <h2>Support 24/7</h2>
+                     <p> Customer satisfaction is our priority and 
+                        we are available at our customer serivec 24/7
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </section>
+      <!--************************* offer section end ************* -->
+      <!--************************* project done start end ************* -->
+      <section class ="project-work">
+      <div class="container headings text-center">
+         <p class="text-center font-weight-bold">MORE THAN 1,000 WEBSITES CREATED </p>
+      </div>
+      <div class="container d-flex justify-content-around align-items-center text-center">
+         <div>
+            <h1 class="count"> 1500 </h1>
+            <P>CMS Installation</P>
+         </div>
+         <div>
+            <h1 class="count"> 100 </h1>
+            <P>Awards Won</P>
+         </div>
+         <div>
+            <h1 class="count"> 700 </h1>
+            <P>Happy Clients</P>
+         </div>
+         <div>
+            <h1  class="count" >200</h1>
+            <P>Working on</P>
+         </div>
+      </div>
+      </section>
+      <!--************************* project done ends ************* -->
+      <!--************************* Our Pricing ends ************* -->
+      <section class ="pricing" id="pricingdiv">
+         <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-whites">OUR BEST PRICING </h1>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class=" col-1g-4 col-md-4 col-12">
+                  <div class="card text-center">
+                     <div class="card-header">BASICS</div>
+                     <div class="card-body">
+                        <li>$<span class="money">40</span>/website</li>
+                        <li>Responsive Website</li>
+                        <li>Domain Name Free</li>
+                        <li>Mobile Friendly</li>
+                        <li>Webmail Support</li>
+                        <li>Customer Support 24/7</li>
+                     </div>
+                     <div class="card-footer ">
+                        <a href="#">Purchase</a>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-1g-4 col-md-4 col-12 card-second">
+                  <div class="card text-center">
+                     <div class="card-header">STANDARD</div>
+                     <div class="card-body">
+                        <li>$<span class="money">60</span>/website</li>
+                        <li>Responsive Website</li>
+                        <li>Domain Name Free</li>
+                        <li>Mobile Friendly</li>
+                        <li>Webmail Support</li>
+                        <li>Customer Support 24/7</li>
+                     </div>
+                     <div class="card-footer ">
+                        <a href="#">Purchase</a>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-1g-4 col-md-4 col-12">
+                  <div class="card text-center">
+                     <div class="card-header">PREMIUM</div>
+                     <div class="card-body">
+                        <li>$<span class="money">80</span>/website</li>
+                        <li>Responsive Website</li>
+                        <li>Domain Name Free</li>
+                        <li>Mobile Friendly</li>
+                        <li>Webmail Support</li>
+                        <li>Customer Support 24/7</li>
+                     </div>
+                     <div class="card-footer ">
+                        <a href="#">Purchase</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--************************* Our Pricing ends ************* -->
+      <!--************************* our custoemrs feedback start ends **** -->
+      <!--*************************contact us starts **** -->
+      <!--*************************contact us end **** -->
+      <!--************************* our custoemrs feedback start ends **** -->
+      <section class ="happyClients">
+         <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">OUR HAPPY  CLIENTS </h1>
+            <p class="text-capitalize pt-1">Our Satisfied Customers says</p>
+         </div>
+         <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+               <li data-target="#demo" data-slide-to="0" class="active"></li>
+               <li data-target="#demo" data-slide-to="1"></li>
+               <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner container">
+               <div class="carousel-item active">
+                  <div class="row">
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >Techwork guys are awesome . Super helpful . Always there if we needed to add any additional content or new design to our website.Keep up the good work.</p>
+                           <h1>Sam Bradely</h1>
+                           <h2> Business Owner</h2>
+                        </div>
+                     </div>
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >The best company we have ever worked with . Great company to work with if you need an amazing website for your business. </p>
+                           <h1>John Smith</h1>
+                           <h2> General Manager</h2>
+                        </div>
+                     </div>
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >We love working with Techworks. Our website looks amazing and our online customers are super satisfied </p>
+                           <h1>Mike Graham</h1>
+                           <h2> IT Manager</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >We love working with Techworks. Our website looks amazing and our online customers are super satisfied . </p>
+                           <h1>Marcus James</h1>
+                           <h2> Business Owner</h2>
+                        </div>
+                     </div>
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >Techwork guys are awesome . Always there if we needed to add any additional content or new design to our website. </p>
+                           <h1>Mohammad Abdul</h1>
+                           <h2> Marketing Manager</h2>
+                        </div>
+                     </div>
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >Awesome Comapany to work with on website design and graphics design. </p>
+                           <h1>Craig Franklin</h1>
+                           <h2> Business Owner</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >Techwork guys are awesome . Always there if we needed to add any additional content or new design to our website.  </p>
+                           <h1>Hamid Tapi</h1>
+                           <h2> Business Ownwer</h2>
+                        </div>
+                     </div>
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" > Always there if we needed to add any additional content or new design to our website.Keep up the good work. </p>
+                           <h1>James Garcia</h1>
+                           <h2> Business Owner</h2>
+                        </div>
+                     </div>
+                     <div class="col-1g-4 col-md-4 col-12">
+                        <div class="box">
+                           <a href="#"><img src="images/test.jpeg" class="img-fluid img-thumbnail"></a>
+                           <p class="m-4" >Awesome Comapany to work with on website design and graphics design.. </p>
+                           <h1>Peter Chukc</h1>
+                           <h2> Customer Relation Manager</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+         </div>
+      </section>
+      <!--************************* out custoemrs feedback end ends ****** -->
+      <section class ="contactus" id="contactid">
+         <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">CONTACT US </h1>
+            <p class="text-capitalize pt-1">We are Here to Help and answer any questions you mgiht have. </p>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-1g-8 col-md-8 col-10 offset-lg-2 offset -md-2 col-1">
+                  <form action="/action_page.php">
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Name" id="email" autocomplete="off" required>
+                     </div>
+                     <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter Email address" id="email" autocomplete="off" required>
+                     </div>
+                     <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Enter Phone Number" id="email" autocomplete="off" required>
+                     </div>
+                     <div class="form-group">
+                        <textarea class="form-control" rows="4" id="comment" placeholder="Detail Description"></textarea>
+                     </div>
+                     <div class="d-flex justify-content-center form-button">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-------   Contact Us End     ----->
+      <!--------   footer start     ----->
+      <footer class="footersection" id="footerdiv">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-6 col-12 footer-div">
+                  <div>
+                     <h3>ABOUT TECHWORKS</h3>
+                     <P>JKJDSAJJSDAKNJSNNJDSJNSDJNSDAJJSDNJSDJSJJ
+                        NJSJJNKDJDSJSJNDKSJ    DJNJDNSNJSDJNSDSNDSNSDNSDNDS
+                        NNSDNDSNDSNSDNSDNSDNNNDNDNNNNNN
+                     </P>
+                     <iframe height="249" width="440"  
+                        src="https://www.youtube.com/embed/quFZ99fdKrk"> 
+                     </iframe>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+                  <div>
+                     <h3>NAVIGATION LINKS</h3>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Services</a></li>
+                     <li><a href="#">Price</a></li>
+                     <li><a href="#footerdiv">About</a></li>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12 col-12 footer-div">
+                  <div>
+                     <h3>Reach us at</h3>
+                     <table class="table table-bordered">
+                        <thead>
+                           <tr>
+                              <th>Firstname</th>
+                              <th>Lastname</th>
+                              <th>Email</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>John</td>
+                              <td>Doe</td>
+                              <td>john@example.com</td>
+                           </tr>
+                           <tr>
+                              <td>Mary</td>
+                              <td>Moe</td>
+                              <td>mary@example.com</td>
+                           </tr>
+                           <tr>
+                              <td>July</td>
+                              <td>Dooley</td>
+                              <td>july@example.com</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+
+
+
+
+
+               <div class="row">
+   <p>The target audience is all ages of people that are looking for a website developing company to develop their website and provide them with more credibility and professionalism in their business .  Having a website help business to maintain a long lasting relationship with their customers .  There is no geographical location for website developing company and we can provide services all over the U.S.  Estimated number of visitors per month would be expected on thousands as more business are now a days looking for website developing company to build, redesign or do the maintenance of their websites.</p> 
+<p>The design approach that I have planned for my sites home page is to have a background image on the website. It will be followed on different pages which will give overall feel for each page. On the home page I want to include two button that will navigate the user to different pages like contact and About us. I want to include background image on some of the supporting site pages as well, so that it clearly describes about that particular section. I want to have all pages to be navigated easily form top of the navbar itself and it will be a single page website hence will be fast and responsive. 
+I have decided to use white, black, and grey on my website. I am using white for the header and footer and White for the background of the description of each page along with background images of having shadow of blue. I am using black color for wording.  
+I have used the sans- serif typeface for the all the fonts and font family poppins has been used as well . For body section for services page, I used Arial and Times New Roman as a font family. </p>
+
+<p>
+WE tried to keep it responsive so that it could be use in any of the platform such as android, Apple IOS, and common browsers such as chrome, Firefox, and IE. 
+In the future, the only thing I missed was to add a live support agent part where customer can reach and chart with our support representative . Additionally, I would add some more of our clients website sample that we have designed . Probably like a sample slide show of their front home page design layout .
+</p>
+</div>
+
+
+
+
+               <div class="mt-5 text-center">
+                  <p>Copyright @2020 All rights reserved | This site can be best viewed with  browrsers including Chrome ,  IE and Firefox  ></p>
+               </div>
+               <div class="scrolltop float-right">
+                  <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn">
+                  </i>
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+
+               <div class="row">
+               <div class="col-lg-4 col-md-6 col-12 footer-div">
+               <p></p>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+              
+               </div>
+               <div class="col-lg-4 col-md-12 col-12 footer-div">
+                
+               </div>
+             
+            </div>
+        
+         </div>
+      </footer>
+      <!----   footer end     --------->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script>
+         $('.count').counterUp({
+                  delay: 10,
+                  time: 8000
+         })
+         
+         
+         
+         //Get the button:
+         mybutton = document.getelementByID("myBtn");
+         
+         window.onscroll = function(){scrollFunction()};
+         function scrollFunction() {
+            if (document.body.scrollTop > 20|| document.documentElement.scrollTop >20){
+               mybutton.style.display = "block";
+            } else {
+               mybutton.style.display ="none";
+            }
+         }
+         function topFunction(){
+            document.body.scrollTop =0; //for safari
+            document.documentElement.scrollTop=0; //For chrome, Firefox, IE and Opera
+         }
+      </script>
+   </body>
+</html>
