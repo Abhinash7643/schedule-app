@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>userList</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<style>
+    .table thead th {
+    width:20px;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+</style>
+<body class="container">
+<br/>
+<h1>Trending Issue</h1>
+<br/><br/>
+<div class="with:80%">
+    <table class="table table-hover" >
+        <thead>
+        <tr>
+            <th>Ticket Number</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>WorkAround</th>
+            <th>Comments</th>
+            <th>Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <div th:each="trendingIssue : ${trendingIssue}">
+            <tr >
+                <td th:text="${trendingIssue.ticketNumber}">neo</td>
+                <td th:text="${trendingIssue.description}">6</td>
+                <td th:text="${trendingIssue.status}">4</td>
+                <td th:text="${trendingIssue.workAround}">6</td>
+                <td th:text="${trendingIssue.comments}">6</td>
+                <td><a th:href="@{/to-edit-trendingIssue(id=${trendingIssue.id})}">Edit</a></td>
+            </tr>
+
+        </div>
+
+        </tbody>
+    </table>
+</div>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/to-add-trending-issue" th:href="@{/to-add-trending-issue}" class="btn btn-info">Add New Issue</a>
+    </div>
+</div>
+
+</body>
+</html>
